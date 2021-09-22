@@ -2,6 +2,7 @@
   "name": "movie-library-cards",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://victorfariass.github.io/movie-cards-library/",
   "dependencies": {
     "acorn": ">=7.1.1",
     "minimist": ">=1.2.3",
@@ -11,6 +12,7 @@
     "serialize-javascript": ">=3.1.0"
   },
   "scripts": {
+    "deploy": "npm run build && ./node_modules/.bin/gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --verbose=true",
@@ -42,6 +44,7 @@
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-sonarjs": "^0.5.0",
+    "gh-pages": "^3.2.3",
     "install": "^0.13.0",
     "npm": "^6.14.9",
     "stylelint": "^13.8.0",
